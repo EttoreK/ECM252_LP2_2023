@@ -1,35 +1,39 @@
 .cabeca{
     color: rgb(25, 6, 6);
     background-color: rgb(107, 0, 0);
-    padding: 0%;
-    margin-top: 0%;
-    height: 13%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
 }
 
 body{
-    font-family: "Sintony";
+    font-family: Sintony;
+    background-image: url(https://www.bardobolinho.com.br/wp-content/uploads/2018/01/bg-body.jpg);
+    background-repeat: repeat;
 }
 
 #logo{
     text-align: center;
-    width: 18%;
     background-color: lightyellow;
-    margin-left: 4%;
-    margin-top: 1%;
 }
-#desde{
-    margin-top: -8%;
-}
+
 #menu-su{
     text-align: center;
-    width: 76%;
-    margin-top: -4.8%;
-    margin-left: 10%;
+}
+
+.barra{
+    background-color: white;
+    color: white;
+    text-decoration: solid;
+    text-decoration-thickness: 20%;
+    border-radius: 20%;
+    height: 40px;
 }
 
 .bot-men-su{
-    margin-left: 1%;
-    margin-right: 1%;
     border: 0cm;
     background-color:  rgb(107, 0, 0);
     color:aliceblue;
@@ -41,14 +45,10 @@ body{
 }
 
 #social{
-    margin-left: 78%;
-    margin-top: -4.45%;
     text-align: center;
 }
 
 .social{
-    margin-left: 1%;
-    margin-right: 1%;
     border: 0cm;
     background-color:  rgb(107, 0, 0);
     color:aliceblue;
