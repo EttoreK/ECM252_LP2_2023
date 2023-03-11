@@ -1,0 +1,44 @@
+h1{
+    color: green;
+}
+#titulo{
+    color: lightgreen;
+    text-align: center;
+}
+p{
+    color: violet
+}
+p#descricao{
+    color:brown;
+}
+p.promocao{
+    background-color: black;
+    color: wheat;
+    text-align: right;
+}
+strong{
+    color: red;
+}
+#ddd{
+    background-color: darkgrey;
+}
+.nova{
+    text-decoration: double;
+    margin: 2.3%;
+}
+p.final-pag#rodape{
+    background-color: aquamarine;
+    text-align: center;
+}
+.final-pag{
+    color: black;
+}
+.curso, .novo-curso{
+    background-color: aliceblue;
+    padding: 1.4%;
+    border: 3px solid;
+    border-color: blueviolet;
+}
+.curso:hover , .novo-curso:hover{
+    background-color: lightgreen;
+}
