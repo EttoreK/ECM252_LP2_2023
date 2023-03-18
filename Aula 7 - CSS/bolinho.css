@@ -2,9 +2,19 @@
     color: rgb(25, 6, 6);
     background-color: rgb(107, 0, 0);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+
+.corpo{
+    color: rgb(25, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
     margin-left: -1%;
     margin-right: -1%;
 }
@@ -24,21 +34,37 @@ body{
     text-align: center;
 }
 
-.barra{
-    background-color: white;
-    color: white;
-    text-decoration: solid;
-    text-decoration-thickness: 20%;
-    border-radius: 20%;
-    height: 40px;
+#menu-me{
+    column-count: 4;
+    column-gap: normal;
+    column-rule: 4px dotted rgb(107, 0, 0);
+    column-width: auto;
+    column-fill: balance;
+    text-align: center;
+    break-inside: avoid;
 }
 
-.bot-men-su{
-    border: 0cm;
+.barra-menu-su{
+    background-color: white;
+    color: white;
+    display: block;
+    width: 2%;
+    margin: 0;
+    margin-left: 2.5%;
+    padding: 0;
+    border: 1.5px solid white;
+    border-radius: 40%;
+    transform: rotate(90deg);
+    align-items: left;
+}
+
+.bott-men-su{
+    border: 0;
     background-color:  rgb(107, 0, 0);
     color:aliceblue;
 }
-.bot-men-su:hover{
+
+.bott-men-su:hover{
     text-decoration: underline;
     text-decoration-color: darkgoldenrod;
     text-decoration-thickness: 30%;
@@ -49,7 +75,7 @@ body{
 }
 
 .social{
-    border: 0cm;
+    border: 0;
     background-color:  rgb(107, 0, 0);
     color:aliceblue;
 }
@@ -57,3 +83,24 @@ body{
 .social:hover{
     color: deepskyblue;
 }
+
+.text-men-me{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Conv_Pacifico';
+    column-span: none;
+    break-inside: avoid;
+}
+
+.barra-menu-me{
+    background-color: white;
+    color: white;
+    display: block;
+    width: 8%;
+    margin: 0;
+    margin-left: 2.5%;
+    padding: 0;
+    transform: rotate(90deg);
+    align-items: left;
+}
+

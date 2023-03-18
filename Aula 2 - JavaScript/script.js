@@ -323,6 +323,7 @@ for (let veiculo of concessionaria.veiculos) {
 
 // ===================================
 
+/*
 let calc = {
     somar: (a, b) => a + b,
     subtrair: (a, b) => a - b
@@ -330,3 +331,125 @@ let calc = {
 
 console.log(calc.somar(2,6))
 console.log(calc.subtrair(2,6))
+*/
+
+// ===================================
+
+/*
+console.log('Eu primeiro')
+console.log("Agora eu")
+console.log("Sempre vou ser a última...:(")
+const a = 2 + 7
+const b = 5
+console.log(a + b)
+*/
+
+// ===================================
+
+/*
+function demorada(){
+    const atualMais2Segundos = new Date().getTime() + 2000
+    while (new Date().getTime() <= atualMais2Segundos);
+    const d = 8 + 4
+    return d
+}
+const a = 2 + 3
+const b = 5 + 9
+const d = demorada()
+const e = 2 + a + b
+console.log(e)
+*/
+
+// ===================================
+
+/*
+function demorada(){
+    const atualMais2Segundos = new Date().getTime() + 2000
+    while (new Date().getTime() <= atualMais2Segundos);
+    const d = 8 + 4
+    return d
+}
+const a = 2 + 3
+const b = 5 + 9
+setTimeout(function(){
+const d = demorada()
+console.log(d)
+}, 500)
+const e = a + b
+console.log(e)
+
+const dataMais10Segundos = new Date().getTime() + 10000
+while (new Date().getTime() <= dataMais10Segundos);
+console.log("e: " + e)
+*/
+
+// ===================================
+
+/*
+const fs = require ('fs')
+const abrirArquivo = (nomeArquivo) => {
+    const exibirConteudo = (erro, conteudo) => {
+        if (erro){
+            console.log("Erro " + erro)
+        } else{
+            console.log("Conteúdo: " + conteudo.toString())
+            const resultado = +conteudo.toString * 2
+            const finalizar = (erro) => {
+                console.log(erro ? "Erro: " + erro : "Escrita ok")
+            }
+            fs.writeFile('dobro.txt', dobro.toString(), finalizar)
+        }
+    }
+    fs.readFile(nomeArquivo, exibirConteudo)
+}
+abrirArquivo('arquivo.txt')
+*/
+
+// ===================================
+/* 
+function calculoDemorado(numero) {
+    return new Promise (function(resolve, reject){
+        let res = 0;
+        for (let i = 1; i<= numero; i++){
+                res += i;
+            }
+        resolve(res);
+    });
+}
+calculoDemorado(10).then( (resultado) => {
+    console.Iog (resultado)
+});
+
+function calculoRapidinho(numero){
+    return Promise . resolve ((numero * (numero + 1)) / 2);
+    }
+    calculoRapidinho(10).then(resultado =>{
+        console.log(resultado)
+    })
+    console.Iog('Esperando. .. ')
+
+function calculoRapidinho(numero){
+    return numero >= 0 ? Promise.resolve((numero * (numero + 1)) / 2) : Promise.reject("Somente valores positivos, por favor");
+    }
+    calculoRapidinho(10).then((resultado) => {
+        console.log(resultado);
+    }).catch((err) => {
+        console.log(err);
+    });
+    calculoRapidinho(-1).then((resultado) => {
+        console.log(resultado);
+    }).catch((err) => {
+        console.log(err);
+    });
+        console.log("esperando...");
+*/
+function calculoRapidinho(n){
+    const p = new Promise(function (resolve, reject){
+        let res = (n * (n + 1)) / 2;
+        resolve(res);
+    })
+    return p;
+}
+// ===================================
+
+/* */
