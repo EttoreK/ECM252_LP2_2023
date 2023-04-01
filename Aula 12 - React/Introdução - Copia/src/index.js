@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-// import <style.css>
+import './styles.css'
 
 // JSX: JavaScript Extension (XML)
 const App = () => {
