@@ -1,0 +1,151 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "microservicos-lembretes",
+    "dateExported": "2023-05-06T12:11:17.247Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "9e1757cb-9c0e-47f5-9d52-8ae135be3a1b",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2023-05-06T12:01:16.233Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ee64eefd-4d5f-44b2-b518-9c164b24478f",
+            "name": "lembretes",
+            "containerId": "",
+            "created": "2023-05-06T12:08:00.966Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d77677c3-11dd-4cbd-bba0-317c7185b180",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "",
+            "name": "GET lembretes",
+            "url": "localhost:4000/lembretes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-06T11:11:32.863Z",
+            "modified": "2023-05-06T11:11:32.863Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"cafe\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f228f51e-5ed4-45a8-95d0-10559dc793ac",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "",
+            "name": "POST lembretes",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-06T11:11:32.864Z",
+            "modified": "2023-05-06T11:11:32.864Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"cafe\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4a848d00-b402-4502-aadd-b0faac94f508",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "",
+            "name": "POST lembretes",
+            "url": "localhost:4000/lembretes \"cafe\"",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-06T11:11:32.865Z",
+            "modified": "2023-05-06T11:11:32.865Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "843a2aec-fda8-4d13-98fd-2dcc242172ab",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "",
+            "name": "POST lembretes",
+            "url": "localhost:4000/lembretes \"fazer cafe\"",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-06T11:11:32.866Z",
+            "modified": "2023-05-06T11:11:32.866Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1ded710-136c-48c7-9c96-d3a1a5306184",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "9e1757cb-9c0e-47f5-9d52-8ae135be3a1b",
+            "name": "obter observacoes",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-05-06T12:01:49.556Z",
+            "modified": "2023-05-06T12:02:26.376Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2933552c-8b8e-4d69-ba61-c1860b5499ae",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "9e1757cb-9c0e-47f5-9d52-8ae135be3a1b",
+            "name": "salvar observacao",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-05-06T12:03:50.974Z",
+            "modified": "2023-05-06T12:05:11.923Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "40a70bd3-5b0e-4067-875c-1c91b5c7b296",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "ee64eefd-4d5f-44b2-b518-9c164b24478f",
+            "name": "obter lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-06T12:09:41.248Z",
+            "modified": "2023-05-06T12:09:59.835Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "674f7f08-c301-4258-8bcb-3cc4d4107703",
+            "colId": "2167ff49-311e-4a3c-a9fc-28c864a8670b",
+            "containerId": "ee64eefd-4d5f-44b2-b518-9c164b24478f",
+            "name": "salvar lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-05-06T12:10:44.915Z",
+            "modified": "2023-05-06T12:11:00.254Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

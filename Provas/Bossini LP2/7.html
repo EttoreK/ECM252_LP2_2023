@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .principal p#promocao{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Sou p</p>
+    <p id="promocao">Sou p id promocao</p>
+    <div class="principal">
+        <p id="promocao">Sou p id promocao filho direto de classe principal</p>
+        <p class="promocao">Sou p classe promocao filho de classe principal</p>
+    </div>
+    <div class="principal">
+        <div>
+            <p id="promocao">Sou p id promocao filho indireto de classe principal</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    .principal p#promocao
+    Todo elemento “p” que tenha o id promocao que seja descendente de um elemento que tenha a classe principal.
+ -->
